@@ -11,10 +11,10 @@ public class mirae {
 		int day = da(mon);
 		int hour = hou();
 		
-		System.out.println("ÇöÀç : "+month+"¿ù "+day+"ÀÏ ");
+		System.out.println("í˜„ì¬ : "+month+"ì›” "+day+"ì¼ "); 
 		ttt(hour);
 		
-		System.out.println("¸î ½Ã°£ ÈÄÀÇ ½Ã°£À» ¾Ë·Áµå¸±±î¿ä? ");
+		System.out.println("ëª‡ ì‹œê°„ í›„ì˜ ì‹œê°„ì„ ì•Œë ¤ë“œë¦´ê¹Œìš”? ");
 		int over = sc.nextInt();
 		int tt = hour + over ;
 		
@@ -27,11 +27,11 @@ public class mirae {
 			month += (day / 31);
 			day %= 31;
 		}
-		if((month==4||month==6||month==9||month==11)&&day>30) { 
+		else if((month==4||month==6||month==9||month==11)&&day>30) { 
 			month += (day / 30);
 			day %= 30;
 		}
-		if(month==2&&day>28) { 
+		else if(month==2&&day>28) { 
 			month += (day / 28);
 			day %= 28;
 		}
@@ -39,16 +39,16 @@ public class mirae {
 			month %= 12;
 		}
 		
-		System.out.println(""+month+"¿ù "+day+"ÀÏ");
+		System.out.println(""+month+"ì›” "+day+"ì¼");
 		ttt(tt);
 	}
 	
 	private static void ttt(int a) {
 		if(a>12) {
 			a=a-12;
-			System.out.println("¿ÀÈÄ"+ a);
+			System.out.println("ì˜¤í›„"+ a);
 		}
-		else System.out.println("¿ÀÀü"+ a);
+		else System.out.println("ì˜¤ì „"+ a);
 	}
 
 	private static int hou() {
