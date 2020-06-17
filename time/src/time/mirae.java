@@ -1,3 +1,4 @@
+/*6.13//6.17수정*/
 package time;
 
 import java.util.Scanner;
@@ -46,9 +47,9 @@ public class mirae {
 	private static void ttt(int a) {
 		if(a>12) {
 			a=a-12;
-			System.out.println("오후"+ a);
+			System.out.print("오후"+ a);
 		}
-		else System.out.println("오전"+ a);
+		else System.out.print("오전"+ a);
 	}
 
 	private static int hou() {
