@@ -1,3 +1,4 @@
+/*6.18*/
 import java.util.Scanner;
 
 public class RPS {
