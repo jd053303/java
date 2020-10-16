@@ -30,7 +30,7 @@ public class RPS {
 				else System.out.println("   !LOSE!");
 			}
 
-			System.out.println("\n다시 하고 싶으면 1을 누르세요.");
+			System.out.println("\nPlay again : 1");
 			l = scan.nextInt();
 		}while(l==1);
 	}
